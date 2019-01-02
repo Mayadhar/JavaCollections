@@ -1,9 +1,9 @@
-package com.arrayBlockingQueueTest;
+package com.priorityQueueTest;
 
 import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;
 
-public class ArrayBlockingQueueMain {
+public class PriorityQueueMain {
 
 	public static void main(String[] args) {
 		Queue<String> queue = new ArrayBlockingQueue<>(10);

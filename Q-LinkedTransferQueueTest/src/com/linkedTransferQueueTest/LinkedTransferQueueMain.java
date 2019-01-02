@@ -1,12 +1,12 @@
-package com.arrayBlockingQueueTest;
+package com.linkedTransferQueueTest;
 
 import java.util.Queue;
-import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.LinkedTransferQueue;
 
-public class ArrayBlockingQueueMain {
+public class LinkedTransferQueueMain {
 
 	public static void main(String[] args) {
-		Queue<String> queue = new ArrayBlockingQueue<>(10);
+		Queue<String> queue = new LinkedTransferQueue<>();
 
 		// adding element into set
 		queue.add("One");

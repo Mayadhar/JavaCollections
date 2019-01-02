@@ -1,12 +1,12 @@
-package com.arrayBlockingQueueTest;
+package com.synchronousQueueTest;
 
 import java.util.Queue;
-import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.SynchronousQueue;
 
-public class ArrayBlockingQueueMain {
+public class SynchronousQueueMain {
 
 	public static void main(String[] args) {
-		Queue<String> queue = new ArrayBlockingQueue<>(10);
+		Queue<String> queue = new SynchronousQueue<>();
 
 		// adding element into set
 		queue.add("One");

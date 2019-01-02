@@ -1,19 +1,19 @@
-package com.arrayBlockingQueueTest;
+package com.priorityBlockingQueueTest;
 
+import java.util.PriorityQueue;
 import java.util.Queue;
-import java.util.concurrent.ArrayBlockingQueue;
 
-public class ArrayBlockingQueueMain {
+public class PriorityBlockingQueueMain {
 
 	public static void main(String[] args) {
-		Queue<String> queue = new ArrayBlockingQueue<>(10);
+		Queue<String> queue = new PriorityQueue<>();
 
 		// adding element into set
 		queue.add("One");
 		queue.add("Three");
 		queue.add("Four");
-		queue.add("Six");
 		queue.add("Five");
+		queue.add("Six");
 		queue.add("Two");
 
 		// adding null element - not allowed throwing NullPointerException
@@ -22,8 +22,9 @@ public class ArrayBlockingQueueMain {
 
 		// adding duplicate element - not allowed
 		queue.add("Six");
+		queue.add("Eight");
 
-		// checking ordering - ascending (Five, Four, One, Six, Three, Two)
+		// checking ordering - ascending (Five, Four, One, Six, Six, Two, Seven, Three)
 		queue.iterator().forEachRemaining(l -> {
 			System.out.print(l + ", ");
 		});

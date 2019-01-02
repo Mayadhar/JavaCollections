@@ -1,12 +1,12 @@
-package com.arrayBlockingQueueTest;
+package com.concurrentLinkedQueueTest;
 
 import java.util.Queue;
-import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.ConcurrentLinkedQueue;
 
-public class ArrayBlockingQueueMain {
+public class ConcurrentLinkedQueueMain {
 
 	public static void main(String[] args) {
-		Queue<String> queue = new ArrayBlockingQueue<>(10);
+		Queue<String> queue = new ConcurrentLinkedQueue<>();
 
 		// adding element into set
 		queue.add("One");
@@ -20,10 +20,10 @@ public class ArrayBlockingQueueMain {
 		//queue.add(null);
 		queue.add("Seven");
 
-		// adding duplicate element - not allowed
+		// adding duplicate element - allowed
 		queue.add("Six");
 
-		// checking ordering - ascending (Five, Four, One, Six, Three, Two)
+		// checking ordering - ascending (One, Three, Four, Six, Five, Two, Seven, Six)
 		queue.iterator().forEachRemaining(l -> {
 			System.out.print(l + ", ");
 		});
