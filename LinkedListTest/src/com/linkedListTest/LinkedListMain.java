@@ -1,27 +1,27 @@
-package com.vectorTest;
+package com.linkedListTest;
 
+import java.util.LinkedList;
 import java.util.List;
-import java.util.Vector;
 
-public class VectorMain {
+public class LinkedListMain {
 
 	public static void main(String[] args) {
-		List<String> list = new Vector<>();
+		List<String> list = new LinkedList<>();
 
 		// adding element into arrayList
+		list.add("Two");
 		list.add("One");
-		list.add("Three");
 		list.add("Four");
 		list.add("Six");
 		list.add("Five");
-		list.add("Two");
-
-		// adding duplicate element - allowed
-		list.add("Six");
+		list.add("Three");
 
 		// adding null element - allowed
 		list.add(null);
 		list.add(null);
+
+		// adding duplicate element - allowed
+		list.add("Six");
 
 		// checking ordering - insertion
 		list.iterator().forEachRemaining(l -> {

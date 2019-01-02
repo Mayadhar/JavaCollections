@@ -6,7 +6,7 @@ import java.util.Stack;
 public class StackMain {
 
 	public static void main(String[] args) {
-		List<Object> list = new Stack<>();
+		List<String> list = new Stack<>();
 
 		// adding element into arrayList
 		list.add("Two");
