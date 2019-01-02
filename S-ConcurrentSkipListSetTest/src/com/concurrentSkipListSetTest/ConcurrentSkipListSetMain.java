@@ -1,9 +1,9 @@
-package com.vectorTest;
+package com.concurrentSkipListSetTest;
 
 import java.util.Set;
 import java.util.TreeSet;
 
-public class TreeSetMain {
+public class ConcurrentSkipListSetMain {
 
 	public static void main(String[] args) {
 		Set<String> set = new TreeSet<>();
